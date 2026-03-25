@@ -10,13 +10,13 @@
             max-width: 800px;
             margin: 60px auto;
             padding: 0 20px;
-            background-color: #f0f4ff;
-            color: #333;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
             text-align: center;
         }
         h1 {
             font-size: 2.5em;
-            color: #0066cc;  /* EXERCISE 4: try changing this color */
+            color: #e94560;
         }
         img {
             margin-top: 20px;
@@ -44,11 +44,13 @@
     <!-- {{ name }} gets replaced with whatever the user typed in the URL -->
     <h1>Hello, {{ name }}!</h1>
 
-    <p>You're visiting a Flask server running on AWS EC2.</p>
+    <p>You're visiting Coleman's Flask server running on AWS EC2.</p>
 
     <!-- swap this image URL for anything you like -->
     <img src="https://imgs.xkcd.com/comics/my_sky.png" alt="xkcd comic">
 
+    <br>
+    <a href="/analyze/{{ name }}" style="color: #e94560;">→ analyze your name</a>
     <br>
     <a href="/">← back to home</a>
 

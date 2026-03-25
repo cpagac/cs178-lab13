@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze: {{ word }}</title>
+    <style>
+        body {
+            font-family: monospace;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>You entered: <strong>{{ word }}</strong></h2>
+    <p>Characters: {{ num_chars }}</p>
+    <p>Vowels: {{ num_vowels }}</p>
+    <p>Reversed: {{ reversed_word }}</p>
+    <br>
+    <a href="/">← back to home</a>
+</body>
+</html>
